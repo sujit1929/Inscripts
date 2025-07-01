@@ -101,11 +101,9 @@ const getPriorityColor = (priority: string) => {
   }
 }
 
-// Main spreadsheet dashboard component
 export default function SpreadsheetDashboard() {
   return (
     <div className="w-full h-screen bg-white">
-      {/* Header with search and profile */}
       <div className="flex items-center justify-between p-4 border-b bg-gray-50">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
@@ -129,7 +127,6 @@ export default function SpreadsheetDashboard() {
         </div>
       </div>
 
-      {/* Toolbar with controls */}
       <div className="flex items-center justify-between p-4 border-b bg-gray-50">
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm">Sort bar</Button>
@@ -145,7 +142,6 @@ export default function SpreadsheetDashboard() {
         </div>
       </div>
 
-      {/* Spreadsheet table */}
       <div className="flex h-full">
         <div className="w-12  border-r">
           <div className="h-12 border-b"></div>
@@ -194,7 +190,6 @@ export default function SpreadsheetDashboard() {
         </div>
       </div>
 
-      {/* Footer Tabs */}
       <div className="border-t bg-white">
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="h-12 bg-transparent border-0 rounded-none">
